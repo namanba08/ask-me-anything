@@ -9,9 +9,9 @@ import { User } from 'next-auth';
 function Navbar() {
   const { data: session } = useSession();
   const user : User = session?.user;
-
+//d7ae8c
   return (
-    <nav className="p-4 md:p-6 shadow-md bg-[#c7b198] text-white ">
+    <nav className="p-4 md:p-6 shadow-md bg-[#ba6210] text-white ">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <a href="#" className="text-xl font-bold mb-4 md:mb-0">
           True Feedback
