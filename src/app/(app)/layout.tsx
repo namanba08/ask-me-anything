@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar';
+import "../globals.css";
 
 interface RootLayoutProps {
   children: React.ReactNode;

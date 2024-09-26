@@ -17,23 +17,24 @@ import {
 } from '@/components/ui/carousel';
 
 export default function Home() {
+  let sign = ";)";
   return (
     <>
       {/* Main content */}
       <main className="flex-grow flex flex-col items-center justify-center px-4 md:px-24 py-12 bg-gradient-to-br from-[#d7ae8c] from-70% to-[#918070] text-white">
         <section className="text-center mb-8 md:mb-12">
           <h1 className="text-3xl md:text-5xl font-bold">
-            Dive into the World of Anonymous Feedback
+            Anonymously message your friends,family or lover {sign};
           </h1>
           <p className="mt-3 md:mt-4 text-base md:text-lg">
-            True Feedback - Where your identity remains a secret.
+            Message here,nobody knows who you are!
           </p>
         </section>
 
         {/* Carousel for Messages */}
         <Carousel
           plugins={[Autoplay({ delay: 2000 })]}
-          className="w-full max-w-lg md:max-w-xl"
+          className="w-full max-w-lg md:max-w-xl gradient"
         >
           <CarouselContent>
             {messages.map((message, index) => (
